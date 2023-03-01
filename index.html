@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online clothes shopping">
+    <title>Blxnt's Marketplace</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+   <!----------HORIZONTAL MENU---------->
+   
+    <nav class="header">
+        <div class="left">
+           <a href="index.html"><img class="image_header" src="assets/blx.png"></a> 
+        </div>
+        <div class="center">
+            <input class="input_index" type="text" placeholder="Which supplement are you looking for?" size="50">
+            <button class="search_button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+         <div class="right">
+            <div class="dropdown">
+                <a href="brands.html"><img src="assets/brands.png"></a>
+                <div class="dropdown-content">
+                    <a href="alphalion.html">ALPHA LION</a>
+                    <a href="dragonpharma.html">DRAGONPHARMA</a>
+                    <a href="maxtitanium.html">MAXTITANIUM</a>
+                    <a href="muscletech.html">MUSCLETECH</a>
+                    <a href="myprotein.html">MYPROTEIN</a>
+                </div>
+            </div>
+            <div>
+                <a href="cart.html"><img src="assets/shop.png"></a>
+            </div>
+            <div class="dropdown-login">
+                <button id="dropdown-login-button"><img src="assets/profile.png"></button>
+                <div id="dropdown-content-login">
+                        <div class="padding">
+                           <span class="close">&times;</span>
+                           <br><br>
+                           <a href="index.html"><img class="image_header" src="assets/blx.png"></a> 
+                           <br><hr><br>
+                           <input class="login_username" type="text" placeholder="username" maxlength="16" required/>
+                           <br><br>
+                           <input id="login_password" type="password" placeholder="password" maxlength="24" required/>
+                           <br><br>
+                           <input type="checkbox" onclick="togglepassword()">  Show Password
+                           <br><br>
+                           <button class="login_button">Login</button>
+                           <br><br>
+                           <p style="color: white">New customer?<a href="signin.html"><small style="color: #9966e7"> Create Account.</small></a>
+                        </div>
+                        <script src="password.js"></script>
+                        <script src="modal_login.js"></script>
+                </div>
+         </div>
+    </nav>
+
+    <!----------CONTENT---------->
+    
+        <img class="image_content" src="assets/banner8.png">
+
+    <!----------SLIDER---------->
+            <section class="product"> 
+                <h2 class="product-category">best sellers</h2>
+                <button class="pre-button"><img src="assets/arrow.png" alt=""></button>
+                <button class="next-button"><img src="assets/arrow.png" alt=""></button>
+                <div class="product-container">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-tag">25% off</span>
+                            <img src="assets/image1.png" class="product-thumbnail" alt="">
+                            <button class="card-button">add to cart</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">myprotein</h2>
+                            <p class="product-description">1Kg Impact Wheight Gainer</p>
+                            <span class="price">13.43€</span><span class="actual-price">17.91€</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-tag">25% off</span>
+                            <img src="assets/image2.png" class="product-thumbnail" alt="">
+                            <button class="card-button">add to cart</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">myprotein</h2>
+                            <p class="product-description">1Kg Impact Whey Isolate</p>
+                            <span class="price">41.99€</span><span class="actual-price">55.99€</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-tag">25% off</span>
+                            <img src="assets/image3.png" class="product-thumbnail" alt="">
+                            <button class="card-button">add to cart</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">myprotein</h2>
+                            <p class="product-description">250g Creatine Monohydrate</p>
+                            <span class="price">14.24€</span><span class="actual-price">18.99€</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-tag">25% off</span>
+                            <img src="assets/image4.png" class="product-thumbnail" alt="">
+                            <button class="card-button">add to cart</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">muscletech</h2>
+                            <p class="product-description">900g Nitro-Tech Whey Protein</p>
+                            <span class="price">24.24€</span><span class="actual-price">32.32€</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-tag">25% off</span>
+                            <img src="assets/image5.png" class="product-thumbnail" alt="">
+                            <button class="card-button">add to cart</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">maxtitanium</h2>
+                            <p class="product-description">900g Whey 100% Refil</p>
+                            <span class="price">24.66€</span><span class="actual-price">32.88€</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-tag">25% off</span>
+                            <img src="assets/image6.png" class="product-thumbnail" alt="">
+                            <button class="card-button">add to cart</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">maxtitanium</h2>
+                            <p class="product-description">300g Preworkout Hórus</p>
+                            <span class="price">22.64€</span><span class="actual-price">30.19€</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-tag">25% off</span>
+                            <img src="assets/image7.png" class="product-thumbnail" alt="">
+                            <button class="card-button">add to cart</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">maxtitanium</h2>
+                            <p class="product-description">300g Preworkout Égide</p>
+                            <span class="price">25.31€</span><span class="actual-price">33.75€</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-tag">25% off</span>
+                            <img src="assets/image8.png" class="product-thumbnail" alt="">
+                            <button class="card-button">add to cart</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">alpha lion</h2>
+                            <p class="product-description">340g SuperHuman Pre</p>
+                            <span class="price">34.64€</span><span class="actual-price">46.18€</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-tag">25% off</span>
+                            <img src="assets/image9.png" class="product-thumbnail" alt="">
+                            <button class="card-button">add to cart</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">alpha lion</h2>
+                            <p class="product-description">140g Apex Burn</p>
+                            <span class="price">41.56€</span><span class="actual-price">55.41€</span>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="discount-tag">25% off</span>
+                            <img src="assets/image10.png" class="product-thumbnail" alt="">
+                            <button class="card-button">add to cart</button>
+                        </div>
+                        <div class="product-info">
+                            <h2 class="product-brand">dragonpharma</h2>
+                            <p class="product-description">60Caps Femaglow</p>
+                            <span class="price">28.23€</span><span class="actual-price">37.64€</span>
+                        </div>
+            </section>
+            <script src="slider.js"></script>
+            <footer>
+                <br><div class="footer-container">
+                  <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor consectetur ipsum, vel laoreet justo pretium at. Sed ut imperdiet tellus. Nullam ut elit sed eros lacinia blandit vel ac nibh.</p>
+                  </div>
+                  <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Brands</a></li>
+                      <li><a href="#">Shopping Cart</a></li>
+                      <li><a href="#">Login</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul>
+                      <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                      <li><i class="fas fa-envelope"></i> blxntsmarketplace@gmail.com</li>
+                      <li><i class="fas fa-map-marker-alt"></i> 123 Rua aleatória, Baltar</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="social-media-icons">
+                  <a href="https://www.facebook.com/profile.php?id=100090912242610" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/blxntsmarketpl" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/blxntsmarketplace/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer-bottom">
+                  <p>&copy; 2023 Blxnt's Marketplace. All rights reserved.</p>
+                </div>
+              </footer>                       
+</body>
+</html>
